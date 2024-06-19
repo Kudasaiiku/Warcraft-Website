@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>ИНФОРМАЦИОННЫЙ ПОРТАЛ WORLD OF WARCRAFT</title>
+
+    <style>
+        .body-top {
+            width: 100%;
+            border: none;
+            margin: auto;
+            font-family: Verdana;
+            font-style: normal;
+            font-size: normal;
+            text-align: center;
+            background-color: #303885;
+        }
+
+        header {
+            padding: 1em;
+            color: white;
+            background-color: #303885;
+            vertical-align: center;
+        }
+
+        #logo {
+            max-width: 180px;
+            max-height: 140px;
+        }
+
+        .col-9 {
+            display: flex;
+        }
+
+        h1 {
+            margin: auto;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 768px) {
+            #logo {
+                max-width: 100px;
+                max-height: 70px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+
+        #menu {
+            background-color: #e4ac35;
+        }
+
+        .navbar-nav {
+            margin: auto;
+        }
+
+        .navbar-light .navbar-toggler {
+            border-color: #ffffff;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffffff;
+        }
+
+        #menu .navbar-nav .nav-item.active {
+            margin-right: 15px;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            position: relative;
+            padding-bottom: 70px;
+        }
+
+        .footer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 50px;
+            color: white;
+            background-color: #303885;
+            font-weight: bold;
+        }
+
+        main {
+            background-color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 40px;
+            padding-top: 50px;
+        }
+
+        main p {
+            text-align: left;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        table#heroes {
+            width: 70%;
+            margin: auto;
+        }
+
+        table#heroes img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        td#description {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body class="body-top">
+    <header class="container">
+
+        <div class="row">
+            <div class="col-3">
+                <img id="logo" src="img/logo.png">
+            </div>
+
+            <div class="col-9">
+                <h1>ИНФОРМАЦИОННЫЙ ПОРТАЛ WORLD OF WARCRAFT</h1>
+            </div>
+        </div>
+    </header>
+
+    <div id="menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <ul class="navbar-nav mr-auto">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle bg-transparent border-0 text-dark" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Меню
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="index.html">Главная</a></li>
+                        <li><a class="dropdown-item" href="characters.html">Персонажи</a></li>
+                        <li><a class="dropdown-item" href="contacts.html">О нас</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="flex">
+        <table class="table table-bordered" id="heroes">
+            <tr class="table-active">
+                <td>Внешний вид</td>
+                <td>Персонаж</td>
+                <td>Раса</td>
+                <td>Класс</td>
+                <td>Описание</td>
+            </tr>
+            <tr>
+                <td><img src="img/Arthas.jpg"></td>
+                <td>Артас Менетил</td>
+                <td>Человек</td>
+                <td>Рыцарь смерти</td>
+                <td id="description">Артас Менетил — персонаж, известный как принц Лордерона. Вначале он был верным и
+                    преданным защитником своего королевства. Однако в ходе событий под влиянием Ледяной Короны и
+                    соблазна силы, Артас отверг свою прежнюю жизнь и стал Рыцарем Смерти, вторгшись в свою родную землю.
+                    Став причиной многих трагических событий, включая вторжение Лича, Артас сыграл ключевую роль в
+                    развитии сюжета Warcraft и в итоге стал одним из наиболее запоминающихся антагонистов в игровой
+                    вселенной.</td>
+            </tr>
+            <tr>
+                <td><img src="img/Illidan.jpg"></td>
+                <td>Иллиядан Ярость Бури</td>
+                <td>Ночной эльф</td>
+                <td>Охотник на демонов</td>
+                <td id="description">Иллидан Ярость Бури - выдающийся персонаж, ползущий по темной дорожке в поисках
+                    магической силы. Эльфийский воин и маг, Иллидан, стремясь к бесконечной магии, прибег к запретным
+                    исследованиям. Он совершил предательство Альянсу и Эльфам Ночи, что привело к его заключению.
+                    Освободившись, Иллидан поклялся мести и погружается в темные тайны, что приводит его к потрясающим
+                    событиям. Его стремление к магии и власти приводит к тому, что он становится демоническим охотником,
+                    поглощая даже часть демонической сущности. </td>
+            </tr>
+            <tr>
+                <td><img src="img/Thrall.jpg"></td>
+                <td>Тралл</td>
+                <td>Орк</td>
+                <td>Шаман</td>
+                <td id="description">Тралл, также известный как Громмаш Хеллскрим, — орочий вождь, один из наиболее
+                    влиятельных персонажей во вселенной. Родившийся в лагере военнопленных, Тралл был вырван из своей
+                    родной семьи и вырос в неволе. Ему удалось сбежать, и под руководством орчего шамана, Дуротана, он
+                    стал вождем и основателем Нового орчего ковена. Тралл играл ключевую роль в событиях во время второй
+                    войны и создании Орды, объединяя разрозненные орчие кланы. Тралл занимал пост Верховного вождя Орды,
+                    он также является шаманом и обладает сильными лидерскими и боевыми навыками, а его характер
+                    отличается силой, честностью и стремлением к миру между расами Азерота.</td>
+            </tr>
+            <tr>
+                <td><img src="img/Jaina.jpg"></td>
+                <td>Джайна Праудмур</td>
+                <td>Человек</td>
+                <td>Маг</td>
+                <td id="description">Джайна Праудмур - могущественная маг и выдающийся лидер в мире Warcraft. Изначально
+                    принцесса Куль-Тираса, она быстро стала одним из ключевых персонажей в событиях игровой вселенной.
+                    Джайна начала как сторонница мира между Альянсом и Ордой, но потеря своего отца в ходе второй войны
+                    привела ее к трагическим изменениям в ее взглядах. Ее персональные потери и трудные решения ведут ее
+                    к конфликту с Альянсом, особенно с ее решением атаковать город Терамор, контролируемый Ордой. Тем не
+                    менее, Джайна остается мудрой и могущественной фигурой, стремящейся к миру и справедливости. Ее
+                    история служит примером сложности выборов и последствий в мире Warcraft.</td>
+            </tr>
+            <tr>
+                <td><img src="img/Sylvana.jpg"></td>
+                <td>Сильвана Ветрокрылая</td>
+                <td>Нежить</td>
+                <td>Охотник</td>
+                <td id="description">Сильвана Ветрокрылая — выдающаяся и таинственная фигура во вселенной Warcraft,
+                    правительница нежити и вождь Орды. Изначально высокоэльфийской рейнджершей, она пережила войну и
+                    потерю своего народа, что привело к ее превращению в нежить. Сильвана стала верховной леди Подгорода
+                    и вождем расы "Отрекшихся". Характеризуется сильной волей и стремлением к выживанию своего народа,
+                    Сильвана также обладает сложной моральной природой. Ее решения и действия вызывают споры и
+                    подчеркивают темные аспекты ее личности. В ходе событий Сильвана становится ключевой фигурой,
+                    влияющей на судьбу Орды и Азерота в целом.</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col">
+                Это сайт, предназначенный для обучения
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

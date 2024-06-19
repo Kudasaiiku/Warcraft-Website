@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>ИНФОРМАЦИОННЫЙ ПОРТАЛ WORLD OF WARCRAFT</title>
+
+    <style>
+        .body-top {
+            width: 100%;
+            border: none;
+            margin: auto;
+            font-family: Verdana;
+            font-style: normal;
+            font-size: normal;
+            text-align: center;
+            background-color: #303885;
+        }
+
+        header {
+            padding: 1em;
+            color: white;
+            background-color: #303885;
+            vertical-align: center;
+        }
+
+        #logo {
+            max-width: 180px;
+            max-height: 140px;
+        }
+
+        .col-9 {
+            display: flex;
+        }
+
+        h1 {
+            margin: auto;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 768px) {
+            #logo {
+                max-width: 100px;
+                max-height: 70px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+
+        #menu {
+            background-color: #e4ac35;
+        }
+
+        .navbar-nav {
+            margin: auto;
+        }
+
+        .navbar-light .navbar-toggler {
+            border-color: #ffffff;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffffff;
+        }
+
+        #menu .navbar-nav .nav-item.active {
+            margin-right: 15px;/
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            position: relative;
+            padding-bottom: 70px;
+        }
+
+        .footer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 50px;
+            color: white;
+            background-color: #303885;
+            font-weight: bold;
+        }
+
+        main {
+            background-color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 40px;
+            padding-top: 50px;
+        }
+
+        main p {
+            text-align: left;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        main ul {
+            width: 50%;
+            margin: auto;
+        }
+
+        .btn#test {
+            width: 1000px;
+            background-color: #e4ac35;
+            border: none;
+        }
+
+        .testWoW select {
+            width: 250px;
+            margin-bottom: 10px;
+        }
+
+        .testWoW label {
+            text-align: left;
+        }
+
+    </style>
+</head>
+
+<body class="body-top">
+    <header class="container">
+
+        <div class="row">
+            <div class="col-3">
+                <img id="logo" src="img/logo.png">
+            </div>
+
+            <div class="col-9">
+                <h1>ИНФОРМАЦИОННЫЙ ПОРТАЛ WORLD OF WARCRAFT</h1>
+            </div>
+        </div>
+    </header>
+
+    <div id="menu">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <ul class="navbar-nav mr-auto">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle bg-transparent border-0 text-dark" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Меню
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="index.html">Главная</a></li>
+                        <li><a class="dropdown-item" href="characters.html">Персонажи</a></li>
+                        <li><a class="dropdown-item" href="contacts.html">О нас</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="modal fade" id="modalExp" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">Насколько хорошо Вы знакомы с WoW?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="max-width: 600px;">
+                    <form method="get" action="#" id="orderForm">
+                        <div class="testWoW">
+                            <label class="label" for="name" style="margin-right: 181px;">
+                                1. Как называется столица Орды?
+                            </label>
+                            <select id="inp1">
+                                <option value="Громовой утес" selected>
+                                    Громовой утес
+                                </option>
+                                <option value="Оргриммар">
+                                    Оргриммар
+                                </option>
+                                <option value="Подгород">
+                                    Подгород
+                                </option>
+                                <option value="Стальгорн">
+                                    Стальгорн
+                                </option>
+                            </select>
+                        </div>
+                        <div class="testWoW">
+                            <label class="label" for="name" style="margin-right: 177px;">
+                                2. Кто является лидером Альянса?
+                            </label>
+                            <select id="inp2">
+                                <option value="Тиранда Шелест Ветра" selected>
+                                    Тиранда Шелест Ветра
+                                </option>
+                                <option value="Генн Седогрив">
+                                    Генн Седогрив
+                                </option>
+                                <option value="Андуин Ринн">
+                                    Андуин Ринн
+                                </option>
+                                <option value="Джайна Праудмур">
+                                    Джайна Праудмур
+                                </option>
+                            </select>
+                        </div>
+                        <div class="testWoW">
+                            <label class="label" for="name">
+                                3. Какой континент является родиной Ночных Эльфов?
+                            </label>
+                            <select id="inp3">
+                                <option value="Восточные королевства" selected>
+                                    Восточные королевства
+                                </option>
+                                <option value="Забытые земли">
+                                    Забытые земли
+                                </option>
+                                <option value="Калимдор">
+                                    Калимдор
+                                </option>
+                                <option value="Расколотые острова">
+                                    Расколотые острова
+                                </option>
+                            </select>
+                        </div>
+                        <div class="testWoW">
+                            <label class="label" for="name">
+                                4. Какой класс обладает способностью "Огненная глыба"?
+                            </label>
+                            <select id="inp4">
+                                <option value="Маг" selected>
+                                    Маг
+                                </option>
+                                <option value="Жрец">
+                                    Жрец
+                                </option>
+                                <option value="Охотник">
+                                    Охотник
+                                </option>
+                                <option value="Разбойник">
+                                    Разбойник
+                                </option>
+                            </select>
+                        </div>
+                        <div class="testWoW">
+                            <label class="label" for="name">
+                                5. Какая раса может играть за Шамана только на стороне Орды?
+                            </label>
+                            <select id="inp5">
+                                <option value="Нежить" selected>
+                                    Нежить
+                                </option>
+                                <option value="Орки">
+                                    Орки
+                                </option>
+                                <option value="Эльфы крови">
+                                    Эльфы крови
+                                </option>
+                                <option value="Гномы">
+                                    Гномы
+                                </option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                            style="margin-top: 10px;">Закрыть</button>
+                        <button type="submit" class="btn btn-primary" id="submit"
+                            style="margin-top: 10px; background-color: #e4ac35; border: none;">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="flex">
+        <p class="font-weight-light">
+            World of Warcraft - это удивительная вселенная, пронизанная волшебством, приключениями и эпическими
+            сражениями. Это мир, где великие континенты и затерянные острова соседствуют с мрачными подземельями и
+            небесными царствами, образуя мозаичную картину невероятного многообразия.
+        </p>
+        <p class="font-weight-light">
+            В этой великой вселенной существуют разнообразные расы, от могущественных людей и благородных эльфов до
+            варварских орков и хитрых гоблинов. Каждая раса обладает своей уникальной историей, традициями и магией, что
+            делает мир WoW настоящим калейдоскопом культур и легенд.
+        </p>
+        <p class="font-weight-light">
+            Магия играет важную роль в этом мире, и его атмосфера насыщена чарами и волшебством. Великие волшебники,
+            жрецы света и шаманы сражаются рядом с воинами и охотниками, создавая неповторимый баланс сил в борьбе за
+            будущее вселенной.
+        </p>
+        <p class="font-weight-light">
+            В центре вселенной стоят могущественные фракции, такие как Альянс и Орда, стремящиеся к миру, но часто
+            оказывающиеся втянутыми в великие войны и интриги. Темные силы и древние злодеи также преследуют свои цели,
+            готовясь к сражениям, которые могут определить судьбу всего мира.
+        </p>
+        <p class="font-weight-light">
+            Огромные города, таинственные руины и бескрайние леса — это всего лишь малая часть того, что включает в себя
+            мир World of Warcraft. Здесь каждый уголок природы, каждый город и подземелье пропитаны историей и
+            загадками, ждущими, чтобы их открыли отважные искатели приключений.
+        </p>
+        <p class="font-weight-light">
+            Чем нравится мир World of Warcraft игрокам:
+        <ul class="list-group">
+            <li class="list-group-item">Богатая история и сюжет</li>
+            <li class="list-group-item">Разнообразие рас и классов</li>
+            <li class="list-group-item">Впечатляющий визуальный дизайн</li>
+            <li class="list-group-item">Масштабные подземелья и рейды</li>
+            <li class="list-group-item">Увлекательные PvP-битвы</li>
+            <li class="list-group-item">Огромный открытый мир</li>
+            <li class="list-group-item">Динамичные события</li>
+            <li class="list-group-item">Сильное сообщество</li>
+            <li class="list-group-item">Развитая экономика</li>
+            <li class="list-group-item">Постоянное развитие</li>
+        </ul>
+        </p>
+        <p class="font-weight-light">
+            В World of Warcraft каждый игрок становится героем собственной истории, участвуя в эпических событиях,
+            общаясь с удивительными персонажами и исследуя бескрайний мир, наполненный чудесами и опасностями.
+        </p>
+
+        <button id="test" type="button" class="btn btn-primary btn-lg btn-block" data-bs-toggle="modal"
+            data-bs-target="#modalExp">
+            Пройти тест
+        </button>
+    </main>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col">
+                Это сайт, предназначенный для обучения
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $('#orderForm').on('submit', function (event) {
+            event.preventDefault();
+
+            let quest1 = $("#inp1").val();
+            let quest2 = $("#inp2").val();
+            let quest3 = $("#inp3").val();
+            let quest4 = $("#inp4").val();
+            let quest5 = $("#inp5").val();
+            let sum = 0;
+
+            if (quest1 == 'Оргриммар') {
+                sum = sum + 1;
+            }
+            else { sum = sum + 0; }
+            if (quest2 == 'Андуин Ринн') {
+                sum = sum + 1;
+            }
+            else { sum = sum + 0; }
+            if (quest3 == 'Калимдор') {
+                sum = sum + 1;
+            }
+            else { sum = sum + 0; }
+            if (quest4 == 'Маг') {
+                sum = sum + 1;
+            }
+            else { sum = sum + 0; }
+            if (quest5 == 'Орки') {
+                sum = sum + 1;
+            }
+            else { sum = sum + 0; }
+
+            console.log(quest1, quest2, quest3, quest4, quest5, sum);
+            if (sum < 3) { alert(`Правильных ответов ${sum} из 5! Похоже, Вы только знакомитесь с миром World of Warcraft. У вас еще многое впереди!`); }
+            if (sum == 3) { alert(`Правильных ответов ${sum} из 5! Вы неплохо знаете о мире World of Warcraft, хотя еще многое предстоит узнать!`); }
+            if (sum > 3) { alert(`Правильных ответов ${sum} из 5! Ого! Вы истинный знаток World of Warcraft. Так держать!`); }
+        }
+        );
+    </script>
+</body>
+
+</html>
